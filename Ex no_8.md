@@ -20,7 +20,6 @@ To write a C program to perform multiplication and division of two numbers using
 void multiply()
 {
     int a, b;
-    printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
     printf("Multiplication = %d\n", a * b);
 }
@@ -28,11 +27,10 @@ void multiply()
 void divide()
 {
     int a, b;
-    printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
     if(b != 0)
     {
-        printf("Division = %.2f\n", (float)a / b);
+        printf("Division = %d\n", a / b);
     }
     else
     {
@@ -50,7 +48,8 @@ int main()
 ```
 
 ## Output
-<img width="367" height="261" alt="image" src="https://github.com/user-attachments/assets/a183c04d-9ff2-404f-9b37-3b635b15ef80" />
+<img width="831" height="317" alt="image" src="https://github.com/user-attachments/assets/cae626a9-066d-46c2-ae7f-d48fc3b40877" />
+
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
