@@ -32,12 +32,10 @@ int factorial(int n)
 
 int main() {
     int num, result;
-    
-    printf("Enter a number: ");
     scanf("%d", &num);
     
     result = factorial(num);
-    printf("Factorial of %d = %d\n", num, result);
+    printf("Factorial value is: %d\n",result);
     
     return 0;
 }
@@ -45,7 +43,8 @@ int main() {
 ```
 
 ## Output:
-<img width="376" height="209" alt="image" src="https://github.com/user-attachments/assets/63fb9f01-604a-4fd5-b041-d9c8b9657bff" />
+<img width="880" height="195" alt="image" src="https://github.com/user-attachments/assets/4d43c72c-85ea-4a27-9b97-3f083c1e8be1" />
+
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
