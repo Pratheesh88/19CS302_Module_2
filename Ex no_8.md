@@ -1,49 +1,55 @@
-# EX 9 C program to find the sum of odd digits using do while loop.
+# EX 8 C program to perform multiplication and division of two numbers using functions (without argument and without return type).
 ## DATE:
 ## AIM:
-To write a C program to find the sum of odd digits using do while loop.
+To write a C program to perform multiplication and division of two numbers using functions (without argument and without return type).
 
 ## Algorithm
-1.Start the program and declare a variable for the number and sum of odd digits.
+1.Start the program and declare two functions for multiplication and division.
 
-2.Read the number from the user.
+2.Define functions that take no arguments and return no value.
 
-3.Use a do-while loop to extract each digit of the number.
+3.Read two numbers from the user.
 
-4.If the digit is odd, add it to the sum.
+4.Call the functions to perform multiplication and division.
 
-5.Display the sum of odd digits.
-
+5.Display the results.
 ## Program:
 ```
 #include <stdio.h>
 
+void multiply()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("Multiplication = %d\n", a * b);
+}
+
+void divide()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if(b != 0)
+    {
+        printf("Division = %d\n", a / b);
+    }
+    else
+    {
+        printf("Division by zero is not allowed.\n");
+    }
+}
+
 int main()
 {
-    int num, sum = 0, digit;
-
-    printf("Enter a number: ");
-    scanf("%d", &num);
-
-    do
-    {
-        digit = num % 10;
-        if(digit % 2 != 0)
-        {
-            sum += digit;
-        }
-        num /= 10;
-    } while(num != 0);
-
-    printf("%d\n", sum);
-
+    multiply();
+    divide();
     return 0;
 }
 
 ```
 
-## Output:
-<img width="431" height="247" alt="image" src="https://github.com/user-attachments/assets/43c15e3d-b500-4c4b-8b82-98b34b9e21e3" />
+## Output
+<img width="831" height="317" alt="image" src="https://github.com/user-attachments/assets/cae626a9-066d-46c2-ae7f-d48fc3b40877" />
+
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
